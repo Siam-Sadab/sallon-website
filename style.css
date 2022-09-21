@@ -1,0 +1,960 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#banner{
+    background:  url(Barber/banner.jpg);
+ 
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+
+
+
+
+.overlay{
+    background: linear-gradient(360deg, rgb(0, 207, 214), rgb(0, 0, 0)) ;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    opacity: 0.8;
+    
+    
+}
+
+
+.headertext{
+    text-align: center;
+    line-height: 30px;
+    color: aliceblue;
+    margin-top: 200px;
+    
+
+}
+
+.headertext h1{
+
+    font-size: 60px;
+    padding-bottom: 15px;
+    font-family: 'Shrikhand', cursive;
+}
+
+.headertext p{
+    padding-top: 15px ;
+    padding-bottom: 15px;
+}
+
+
+.button{
+    padding: 30px;
+    
+ 
+  
+}
+.btn{
+    background-color: transparent;
+    padding: 10px 20px;
+    border: 2px solid white;
+    margin-right: 20px;
+    font-size: bolder;position: relative;
+   
+    z-index: 2;
+}
+
+.btn span{
+    position: absolute;
+
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0%;
+    background-color: rgb(255, 255, 255);
+    z-index: 1;
+    border: none;
+ transition: 0.5s;
+
+}
+
+
+.btn:hover span{
+  
+   
+    top: 0;
+    left: 0;
+   
+    width: 100%;
+    background-color: rgb(252, 252, 252);
+    z-index: -1;
+
+}
+
+.logo{
+    z-index:1;
+  margin-top: 20px;
+  margin-left: 25px;
+  background-color: rgba(22, 11, 0, 0.842);
+   
+}
+
+
+.flex{
+    min-height: 10vh;
+    background-color: rgba(255, 145, 2, 0);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 30px;
+
+}
+
+.navdiv{
+    min-height: 0vh;
+}
+
+
+
+.flex ul{
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 4, 4, 0);
+    transition: 1s;
+
+}
+.navdiv{
+    background-color: rgba(0, 255, 255, 0);
+   
+   
+    width: auto;
+    justify-content: center;
+    margin-top: 0px;
+}
+
+.navdiv ul{
+    background-color: rgba(3, 11, 19, 0.027);
+}
+
+.navdiv ul li{
+    list-style-type: none;
+    background-color: rgba(137, 43, 226, 0);
+    
+}
+
+.navdiv ul li{
+    transition: 1s;
+    line-height: 40px;
+   
+
+}
+
+.navdiv ul li a{
+    text-decoration: none;
+    margin: 0px 10px;
+    text-transform: uppercase;
+    font-family: 'Figtree', sans-serif;
+    color: aliceblue;
+  
+}
+
+.navdiv ul li:hover{
+    color: rgb(0, 255, 234);
+    transform:scale(0.9);
+
+}
+
+.navdiv ul li a:hover{
+    color: aqua;
+}
+
+/* feture section start here */
+
+#feature{
+    width: 100%;
+    padding: 70px 0px;
+    text-align: center;
+    
+}
+.texttitle h1{
+    margin-bottom: 50px;
+}
+
+
+.texttitle p{
+    text-align: center;
+
+padding-bottom: 10px;
+z-index: 1;
+display: inline-block;
+position: relative;
+text-transform: uppercase;
+  font-family: 'Figtree', sans-serif;
+  font-size: 12px;
+color: rgb(0, 63, 63);
+
+
+
+}
+
+
+.texttitle p::after{
+    content: '';
+    height: 20px;
+    width: 70%;
+    position: absolute;
+    top: -10px;
+    transform: rotate(5deg);
+left: 0;
+background: linear-gradient(180deg, rgb(0, 171, 177), rgb(250, 252, 252)) ;
+border-top-left-radius: 30px;
+border-bottom-right-radius: 30px;
+   
+    z-index: -1;
+    
+}
+
+.featurebox{
+
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: auto;
+    background-color: rgba(136, 184, 168, 0);
+    padding: 10px;
+}
+
+.feature{
+    flex-basis: 50%;
+    background-color: rgba(0, 255, 255, 0);
+}
+.featureimg{
+    flex-basis: 50%;
+    margin: auto;
+    background-color: rgba(250, 235, 215, 0);
+}
+.featureimg img{
+    width: 70%;
+    border-radius: 10px;
+
+}
+
+.feature h1{
+     text-align:left;
+     margin-bottom: 20px;
+     color: rgb(0, 179, 170);
+}
+
+.description{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px ;
+    
+   
+}
+
+.destext{
+    text-align: initial;
+    padding-left: 10px;
+    font-family: 'Figtree', sans-serif;
+    font-size: 13px;
+}
+
+.fa-solid{
+    color: rgb(0, 179, 170);
+   font-size: 20px;
+   border: 1px solid rgb(0, 179, 170);
+   padding: 7px;
+   border-radius: 7px;
+}
+
+
+/* feture section start here */
+
+
+/* service section start here */
+
+#service{
+    
+    min-height: 120vh;
+    text-align: center;
+    width: 100%;
+    background-color: rgba(33, 128, 212, 0);
+    margin: auto;
+   
+  
+   
+}
+
+.texttitle {
+    text-align: center;
+    padding-top: 60px;
+    
+}
+
+
+.servicebox{
+background-color: rgba(240, 240, 240, 0);
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: space-around;
+   
+}
+
+
+.singleservic{
+   
+    flex-basis: 48%;
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+    background-color: rgb(0, 133, 250);
+}
+
+
+.hr{
+    width: 60%;
+    height: 1px;
+    border: 0;
+    background-color: aliceblue;
+    margin: 10px auto;
+
+   
+}
+.heading{
+    position: absolute;
+ left: 10%;
+  bottom: -10%;
+  width: 80%;
+ 
+    color: rgb(255, 255, 255);
+    z-index: 2;
+   visibility: hidden;
+  
+   transition: 0.5s;
+}
+
+.singleservic:hover .heading{
+    visibility: visible;
+bottom:30%;
+   
+}
+
+
+.overlay2{
+ position: absolute;
+ height: 100%;
+ width: 100%;
+ background: linear-gradient(360deg, rgb(2, 217, 224), rgb(0, 0, 0)) ;
+ opacity: 0;
+ border-radius: 7px;
+transition: 1s;
+
+}
+
+.singleservic:hover .overlay2{
+    opacity: 0.8;
+}
+
+   
+ 
+
+
+
+.singleservic img{
+   
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+}
+
+/* service section end here */
+
+
+/* testimonial */
+#testimonial{
+    width: 100%;
+    background-color: aliceblue;
+    padding-bottom: 80px;
+}
+
+.testimonial-row{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items:center;
+    margin: auto;
+}
+
+.testimonial-col{
+    background-color: rgb(255, 255, 255);
+    flex-basis: 30%;
+    padding: 20px;
+    box-shadow: 0px 3px 20px 1px  rgba(0, 196, 196, 0.137) ;
+    transition: 1s;
+    
+}
+
+.testimonial-col:hover{
+   transform: translateY(20px);
+}
+
+.user{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.user img{
+    width: 40px;
+    margin-right: 10px;
+}
+
+.userinfo small{
+    color: rgb(0, 196, 196);
+
+}
+
+
+/* testimonial */
+
+/* fitter sectio */
+
+#footer{
+
+    padding: 10px 0px;
+    background-color: #00776d;
+}
+
+#footer nav{
+    display: flex;
+    flex-wrap: wrap;
+    align-self:flex-start ;
+    text-align: left;
+    
+    color: rgb(255, 255, 255);
+    margin-left: 70px;
+    background-color: rgba(243, 143, 12, 0);
+    padding: 0px 0px;
+}
+
+#footer nav a{
+
+    padding: 20px 10px;
+    transition: 1s;
+    background-color: rgba(0, 255, 255, 0);
+
+}
+
+#footer nav a:hover{
+
+    border-bottom: 1px solid white;
+    padding: 20px 10px; 
+    cursor: pointer;
+}
+
+#footer nav a{
+    margin-right: 5px;
+    font-size: 15px;
+    font-family: 'Figtree', sans-serif;
+    font-size: small;
+}
+
+.allmenu{
+    padding: 10px 50px;
+    display: flex;
+    background-color: rgba(103, 114, 114, 0);
+  
+
+}
+.leftdiv{
+    background-color: rgba(238, 140, 3, 0);
+    padding: 20px ;
+}
+
+.leftdiv h5{
+    padding-left: 10px;
+    font-family: 'Figtree', sans-serif;
+}
+
+#footer .lines{
+
+    width: 87%;
+    margin: auto;
+    border: none;
+    height: 0.5px;
+    background-color: rgba(90, 90, 90, 0.521);
+
+}
+.leftdiv h5{
+    color: aliceblue;
+    margin-bottom: 20px;
+
+}
+
+.cmndiv{
+    flex-basis: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgba(221, 129, 9, 0);
+}
+
+
+
+
+.div1{
+    flex-basis: 33%;
+    display: flex;
+    flex-direction: column;
+    color: aliceblue;
+    padding: 0px 10px;
+}
+
+
+.div1 a{
+  
+    font-family: 'Roboto', sans-serif;
+   text-transform: uppercase;
+ font-size: 10px;
+    margin-bottom: 15px;
+    color: rgb(180, 180, 180);
+   
+}
+.div1 a:hover{
+
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+
+
+.div2{
+    flex-basis: 33%;
+    display: flex;
+    flex-direction: column;
+    color: aliceblue;
+    padding: 0px 10px;
+}
+
+
+
+.div2 a{
+    font-family: 'Roboto', sans-serif;
+   text-transform: uppercase;
+ font-size: 10px;
+    margin-bottom: 15px;
+    color: rgb(180, 180, 180);
+}
+
+
+.div3{
+    flex-basis: 33%;
+    display: flex;
+    flex-direction: column;
+    color: aliceblue;
+    padding:  0px 10px;
+}
+
+
+.div3 a{
+  
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+  font-size: 10px;
+     margin-bottom: 15px;
+     color: rgb(180, 180, 180);
+}
+
+
+/* Specialll divvvvvvvvvvvvvvvvvvvvvvv */
+
+.div3h{
+    flex-basis: 33%;
+    display: flex;
+    flex-direction: column;
+    color: aliceblue;
+    padding:  0px 10px;
+}
+
+
+.div3h a{
+  
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+  font-size: 10px;
+     margin-bottom: 15px;
+     color: rgb(180, 180, 180);
+}
+
+.div3h h5{
+    font-family: 'Figtree', sans-serif;
+}
+
+.div3h h5{
+    margin-bottom: 20px;
+}
+
+
+
+/* Specialll divvvvvvvvvvvvvvvvvvvvvvv */
+
+
+
+.div3p{
+    flex-basis: 33%;
+    display: flex;
+    flex-direction: column;
+    color: aliceblue;
+    padding:  0px 10px;
+    visibility: hidden;
+}
+
+
+.div3p a{
+  
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+  font-size: 10px;
+     margin-bottom: 15px;
+     color: rgb(180, 180, 180);
+}
+
+.div3p h5{
+    font-family: 'Figtree', sans-serif;
+}
+
+.div3p h5{
+    margin-left: -10px;
+   
+
+}
+
+.div1 h5{
+    font-family: 'Figtree', sans-serif;
+}
+
+
+.div2 h5{
+    font-family: 'Figtree', sans-serif;
+}
+
+.div3 h5{
+    font-family: 'Figtree', sans-serif;
+}
+
+.allmenu{
+    display: flex;
+    justify-content: space-between;
+}
+
+.leftdiv{
+    flex-basis: 49%;
+
+}
+
+.righttdiv h5{
+
+    margin-bottom: 10px;
+    color: aliceblue;
+}
+
+.div1 h5{
+    margin-bottom: 20px;
+}
+
+
+.div2 h5{
+    margin-bottom: 20px;
+}
+
+.div3 h5{
+    margin-bottom: 20px;
+}
+
+
+.righttdiv{
+    flex-basis: 49%;
+    background-color: rgba(97, 60, 12, 0);
+    width: 100px;
+    will-change: 300px;
+    padding: 20px;
+}
+
+
+.iconsection{
+
+    background-color: rgba(250, 235, 215, 0);
+    padding: 25px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+  .fa-brands{
+
+    color: aliceblue;
+    margin-left: 20px;
+    font-size: 17px;
+
+}
+
+.leftside{
+    margin-top: 10px;
+    background-color: rgba(250, 235, 215, 0);
+   
+}
+
+.nav a{
+
+    color: aliceblue;
+    font-family: 'Figtree', sans-serif;
+    margin-left: 20px;
+
+}
+
+.line{
+
+    border: none;
+    width: 100%;
+    height: 0.25px;
+    background-color: rgba(90, 90, 90, 0.521);
+}
+
+/* fitter sectio */
+
+@media screen and (max-width: 770px)
+
+{
+
+#banner{
+    text-align: center;
+}
+
+.headertext h1{
+
+    font-size: 30px;
+    
+}
+
+
+.flex{
+ 
+    background-color: rgba(8, 6, 3, 0);
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  
+}
+
+
+.navdiv{
+ margin-top: 60px;   
+}
+
+.navdiv ul li{
+    display: flex;
+    flex-direction: column;
+}
+
+.navdiv ul {
+    display: flex;
+    align-items: center;
+
+    flex-direction: column;
+   
+}
+
+.headertext{
+    text-align: center;
+    line-height: 30px;
+    color: aliceblue;
+    margin-top: 100px;
+
+
+
+}
+
+
+.headertext h1{
+
+    font-size: 30px;
+    padding-bottom: 15px;
+    font-family: 'Shrikhand', cursive;
+}
+
+.headertext p{
+    padding-top: 5px ;
+    padding-bottom: 1px;
+    padding: 0px 10px;
+}
+
+.button{
+
+    display: flex;
+    flex-direction: column;
+    width: 170px;
+    margin: auto;
+    line-height: 20px;
+}
+.btn{
+    padding: 10px 15px;
+    margin: 10px 0px;
+    text-transform: uppercase;
+    font-family:'Figtree', sans-serif;
+}
+
+.featurebox{
+    display: flex;
+    flex-direction: column;
+}
+
+.feature h1{
+    text-align: center;
+}
+
+
+.featureimg img{
+    width: 100%;
+    border-radius: 6px;
+
+}
+
+
+.singleservic{
+    flex-basis: 100%;
+}
+
+
+.testimonial-col{
+    flex-basis: 100%;
+    margin-bottom: 20px;
+
+}
+
+.heading{
+  
+  bottom: -10%}
+
+
+  #footer nav{
+
+    justify-content: center;
+    padding: 10px 0px;
+}
+
+#footer nav a{
+
+    padding: 20px 5px;}
+
+    #footer nav{
+
+    margin-left: 10px;}
+
+    
+#footer nav a:hover{
+
+   
+
+    padding: 5px 5px; 
+    cursor: pointer;
+    border-bottom: none;
+}
+
+#footer nav a{
+
+    padding: 5px 5px;
+    transition: none;
+    background-color: rgba(0, 255, 255, 0);
+
+}
+
+.leftdiv{
+    background-color: rgba(238, 140, 3, 0);
+    padding: 0px ;
+
+}
+
+
+.allmenu{
+    padding: 10px 10px;
+    display: flex;
+    background-color: rgba(103, 114, 114, 0);
+
+}
+
+.div1{
+    flex-basis: 100%;
+}
+
+.div2{
+    flex-basis: 100%;
+}
+
+.div3{
+    flex-basis: 100%;
+    align-items: flex-start;
+    visibility: visible;
+}
+
+.div3p h5{
+    margin-left: -10px;
+
+}
+
+.div3p
+{
+
+    flex-basis: 100%;
+    visibility: visible;
+    margin-top: 30px;
+}
+
+
+.div3{
+    visibility: hidden;
+   
+
+}
+
+.iconsection{
+    flex-direction: column;
+}
+
+.nav a{
+
+    font-size: 13px;
+}
+.nav a{
+    margin-left: 5px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.leftside{
+    margin-bottom: 20px;
+}
+
+.leftdiv{
+    background-color: rgba(39, 56, 71, 0);
+}
+
+.righttdiv{
+    background-color: rgba(39, 56, 71, 0);
+    padding: 0px;
+
+}
+
+}
+
